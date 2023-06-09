@@ -2,6 +2,9 @@ import sys
 from typing import Any
 from models.loader.args import parser
 from models.loader import LoaderCheckPoint
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 from configs.model_config import (llm_model_dict, LLM_MODEL)
 from models.base import BaseAnswer
 

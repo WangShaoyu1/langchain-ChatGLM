@@ -1,5 +1,7 @@
 #coding=utf8
-
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 from langchain.utilities import BingSearchAPIWrapper
 from configs.model_config import BING_SEARCH_URL, BING_SUBSCRIPTION_KEY
 

@@ -14,6 +14,8 @@ embedding_model_dict = {
     "ernie-base": "nghuyong/ernie-3.0-base-zh",
     "text2vec-base": "shibing624/text2vec-base-chinese",
     "text2vec": "GanymedeNil/text2vec-large-chinese",
+    "m3e-small": "moka-ai/m3e-small",
+    "m3e-base": "moka-ai/m3e-base",
 }
 
 # Embedding model name
@@ -46,7 +48,7 @@ llm_model_dict = {
     },
     "chatglm-6b": {
         "name": "chatglm-6b",
-        "pretrained_model_name": "THUDM/chatglm-6b",
+        "pretrained_model_name": "/mnt/d/gitlab/langchain-ChatGLM/chatglm-6b",
         "local_model_path": None,
         "provides": "ChatGLM"
     },
@@ -89,18 +91,8 @@ llm_model_dict = {
     },
 }
 
-# LLM 名称
-LLM_MODEL = "chatglm-6b"
-# 如果你需要加载本地的model，指定这个参数  ` --no-remote-model`，或者下方参数修改为 `True`
-NO_REMOTE_MODEL = False
-# 量化加载8bit 模型
-LOAD_IN_8BIT = False
-# Load the model with bfloat16 precision. Requires NVIDIA Ampere GPU.
-BF16 = False
-# 本地模型存放的位置
-MODEL_DIR = "model/"
-# 本地lora存放的位置
-LORA_DIR = "loras/"
+# LLM model name
+LLM_MODEL = "/mnt/d/gitlab/langchain-ChatGLM/chatglm-6b"
 
 # LLM lora path，默认为空，如果有请直接指定文件夹路径
 LLM_LORA_PATH = ""

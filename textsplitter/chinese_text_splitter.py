@@ -1,6 +1,9 @@
 from langchain.text_splitter import CharacterTextSplitter
 import re
 from typing import List
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 from configs.model_config import SENTENCE_SIZE
 
 

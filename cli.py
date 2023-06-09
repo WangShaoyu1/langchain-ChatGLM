@@ -1,5 +1,7 @@
 import click
-
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 from api import api_start as api_start
 from configs.model_config import llm_model_dict, embedding_model_dict
 

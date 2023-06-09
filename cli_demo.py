@@ -1,3 +1,6 @@
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 from configs.model_config import *
 from chains.local_doc_qa import LocalDocQA
 import os

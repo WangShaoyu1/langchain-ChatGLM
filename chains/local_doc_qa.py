@@ -1,6 +1,9 @@
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.document_loaders import UnstructuredFileLoader, TextLoader
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 from configs.model_config import *
 import datetime
 from textsplitter import ChineseTextSplitter

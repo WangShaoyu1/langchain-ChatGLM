@@ -3,6 +3,9 @@ import os
 import shutil
 
 from chains.local_doc_qa import LocalDocQA
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 from configs.model_config import *
 import nltk
 from models.base import (BaseAnswer,
